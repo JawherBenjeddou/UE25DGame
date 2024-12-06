@@ -139,7 +139,7 @@ void AProject25DCharacter::Move(const FInputActionValue& Value)
 		AddMovementInput(ForwardDirection, MovementVector.X); // Move left or right
 
 		// Smoothly rotate character based on movement direction
-		if (MovementVector.X != 0)
+		if (MovementVector.X != 0)	
 		{
 			// Target rotation: face right (0 degrees) or left (180 degrees)
 			FRotator TargetRotation = FRotator(0.0f, (MovementVector.X > 0) ? 0.0f : 180.0f, 0.0f);
